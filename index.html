@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<title>Get Started</title>
+	<link rel="stylesheet" type="text/css" href="mainpage.css"/>  
+	<link rel="Shortcut Icon" href="tmptooth.ico"/>
+	<script>
+		function tmp(e)
+		{
+			console.log(e.id);
+			window.location.href=e.id+".php";
+		}
+	</script>
+</head>
+<body>
+	
+	<h1 style="font-size:50px;-moz-user-select:none;left:28%;z-index:100000;position:absolute;background-color:lightseagreen;color:white;border-radius:3px;"><strong>#myDentalRecordBook</strong></h1>
+
+	<img id="mainimage" src="a.JPG"/>
+	<div id="buttons">
+		<div class="but" onclick="tmp(this)" id="newpatient"><b>New Patient</b></div><br/>
+		<div class="but" onclick="tmp(this)" id="oldpatient"><b>Old Patient</b></div><br/>
+		<div class="but" onclick="tmp(this)" id="appointments"><b>Appointments</b></div><br/>
+		<div class="but" onclick="tmp(this)" id="phonenums"><b>Phone Numbers</b></div><br/>
+	</div>
+</body>
+</html>

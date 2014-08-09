@@ -1,0 +1,161 @@
+body
+{
+	background-color: #49497c;
+	text-align: center;
+	font-family: Courier New;
+}
+#mainimage
+{
+	width:100%;
+	height:100%;
+	top:-0.4%;
+	left:0;
+	position: fixed;
+	z-index: 0;
+}
+.but
+{
+	padding: 16px;
+	width:39%;
+	background-color: #1B9477;
+	border-radius: 3px;
+}
+.but:hover
+{
+	cursor: pointer;
+	background-color: #00ff00;
+	opacity: 1;
+	border-radius:8px;
+}
+
+#backbut
+{
+	background-color: #3cb0fd;
+	padding: 10px;
+	width:8%;
+	position: absolute;
+	top:-1%;
+	left:-1%;
+}
+#backbut:hover
+{
+	cursor: pointer;
+	background-color: #3498db;
+	border-radius:10px;
+}
+#mainsearch
+{
+	text-align: left;
+}
+#buttons
+{
+	padding-top: 8px;
+	padding-left: 14%;
+	padding-right: 1%;
+	background-color: #3399ff;
+	height: 270px;
+	width:26%;
+	z-index: 1;
+	position: absolute;
+	top:26%;
+	left:28%;
+	border-radius: 5px;
+}
+#maintooth
+{
+	position: absolute;
+	top:17%;
+	left:17%;
+	z-index: 0;
+}
+#searchdiv
+{
+	background-color: green;
+	position: absolute;
+	top:10%;
+	text-align: left;
+	padding: 10px;
+	width:99%;
+	left:-0.5%;
+}
+#responsediv
+{
+	position:absolute;
+	top:20%;
+	width:99%;
+}
+.responses
+{
+	padding:10px; 
+	text-align: left;
+	background-color: #ff6600;
+}
+.responses:hover
+{
+	cursor: pointer;
+	background-color: #ff8533;
+}
+.responses:hover td
+{
+	cursor: pointer;
+	background-color: #ff8533;
+	border-radius: 5px;	
+}
+tr:hover
+{
+	border-radius: 10px;
+}
+#headeroftable td
+{
+	background-color: green;
+	padding: 10px;
+	font-family: Times New Roman;
+	border-radius: 5px;
+	font-weight: bolder;
+}
+
+#resulttable td, #phonetable td
+{
+	padding: 10px;
+}
+#resulttable2 td
+{
+	padding: 8px;
+}
+
+#resulttable
+{
+	position: absolute;
+	top:5%;
+	text-align: center;
+	-moz-user-select:none;
+}
+#resulttable2 
+{
+	position: absolute;
+	top:15%;
+	text-align: center;
+	-moz-user-select:none;
+}
+#phonetable
+{
+	margin-top:-10%;
+	margin-left:29%;
+	text-align: center;
+	-moz-user-select:none;
+}
+#openform,#mainform
+{
+	text-align: left;
+	font-weight: bold;
+}
+#descr
+{
+	position: absolute;
+	left:55%;
+	top:35%;
+}
+input
+{
+	text-align: center;
+}

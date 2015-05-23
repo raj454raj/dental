@@ -1,6 +1,6 @@
 <?php
 
-$con=mysqli_connect("domain","root","yourPassword","dental_db");
+$con=mysqli_connect("localhost","root","yourPASSWORD","dental_db");
 	if (mysqli_connect_errno())
 	{
 		echo "Failed to connect to MySQL: ".mysqli_connect_error();

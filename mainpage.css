@@ -86,7 +86,7 @@ body
 }
 .responses
 {
-	padding:10px; 
+	padding:10px;
 	text-align: left;
 	background-color: #ff6600;
 }
@@ -99,7 +99,7 @@ body
 {
 	cursor: pointer;
 	background-color: #ff8533;
-	border-radius: 5px;	
+	border-radius: 5px;
 }
 tr:hover
 {
@@ -130,7 +130,7 @@ tr:hover
 	text-align: center;
 	-moz-user-select:none;
 }
-#resulttable2 
+#resulttable2
 {
 	position: absolute;
 	top:15%;

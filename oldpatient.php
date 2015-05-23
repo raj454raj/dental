@@ -3,7 +3,7 @@
 <head>
 	<title>Old Patients</title>
 	<link rel="stylesheet" type="text/css" href="mainpage.css"/>
-	<script type="text/javascript" src="jquery.js"></script>  
+	<script type="text/javascript" src="jquery.js"></script>
 	<link rel="Shortcut Icon" href="tmptooth.ico"/>
 	<script>
 		function goback()
@@ -13,7 +13,7 @@
 
 		function sendreq()
 		{
-			
+
 			var maindiv=document.getElementById("mainsearch");
 
 			if(maindiv.value!="")
@@ -30,7 +30,7 @@
 				xml.send();
 			}
 		}
-		
+
 		function opendetails(e)
 		{
 			console.log(e.id.slice(4));
@@ -43,7 +43,7 @@
 	</script>
 </head>
 <body onload="sendreq();">
-	
+
 	<h1>Search For Patients</h1>
 <div id="backbut" onclick="goback()"><b>Back</b></div><br/>
 <input id="mainsearch" onkeyup="sendreq()" type="text" style="width:50%;" target/>
@@ -51,7 +51,7 @@
 <div id="verytempdiv" style="visibility:visible;"></div><!--<form id="tmpform" method="POST" onsubmit="heythere()"><input type="text"  id="idclicked" name="rowclicked"/><input type="submit"/></form></div>
 -->
 <?php
-	
+
 
 ?>
 

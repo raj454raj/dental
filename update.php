@@ -4,7 +4,7 @@
 <head>
 	<title>Update records</title>
 	<link rel="stylesheet" type="text/css" href="mainpage.css"/>
-	<script type="text/javascript" src="jquery.js"></script>  
+	<script type="text/javascript" src="jquery.js"></script>
 	<link rel="Shortcut Icon" href="tmptooth.ico"/>
 	<script>
 		function goback()
@@ -37,16 +37,16 @@
 		include "confidential.php";
 		$q=mysqli_query($con, "SELECT * FROM Patients WHERE Patient_ID=".$_GET['id']);
 		$row = mysqli_fetch_array($q);
-		
+
 ?>
 <br/>
 <div id="settitle" style="visibility:hidden;">
-	<?php 
+	<?php
 		echo $row['Name'];
 	?>
 </div>
 <div id="providevalues" style="visibility:hidden;">
-	<?php 
+	<?php
 		echo "['".$row['Gender']."', '".$row['Status']."', '".$row['Treatment_Given']."']";
 	?>
 </div>
@@ -68,7 +68,7 @@
 	Past Dental history:<br/>
 	<textarea name="updatedenthist" type="text" style="width:50%;height:8%;"><?php echo $row['DentalHistory'];?></textarea><br/><br/>
 	Treatment Given: <input name="updatetreatmentgiven1" type="checkbox"/>RCT<input name="updatetreatmentgiven2" style="margin-left:3%;" type="checkbox"/>Composite<input name="updatetreatmentgiven3" style="margin-left:3%;" type="checkbox"/>GIC<input name="updatetreatmentgiven4" style="margin-left:3%;" type="checkbox"/>SF<br/><br/>
-	Next Appointment: <input name="updatenextappdate" type="date" value="<?=$row['NextAppointmentDate']?>" style="width:10%;"/><input name="updatenextapptime" type="time" value="<?=$row['NextAppointmentTime']?>" style="width:8%;"/><br/><br/> 
+	Next Appointment: <input name="updatenextappdate" type="date" value="<?=$row['NextAppointmentDate']?>" style="width:10%;"/><input name="updatenextapptime" type="time" value="<?=$row['NextAppointmentTime']?>" style="width:8%;"/><br/><br/>
 	Referred By: <input name="updatereferred" type="text" value="<?=$row['Referred_By']?>"/><br/><br/>
 	<div id="descr">Description:<br/><textarea name="updatedesc" rows="24" cols="70"><?php echo $row['Description'];?></textarea></div>
 	<input type="submit" value="Submit"/>
@@ -79,7 +79,7 @@ $tmpstr="";
 	if($_POST['updatetreatmentgiven1']=="on")
 		$tmpstr.="RCT";
 	if($_POST['updatetreatmentgiven2']=="on")
-	{	
+	{
 		if($tmpstr=="")
 			$tmpstr.="Composite";
 		else
@@ -91,8 +91,8 @@ $tmpstr="";
 			$tmpstr.="GIC";
 		else
 			$tmpstr.=", GIC";
-	
-	}	
+
+	}
 	if($_POST['updatetreatmentgiven4']=="on")
 	{
 		if($tmpstr=="")
